@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: serif;
+}
+p{
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family:emoji;
+}
+.nav-navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    background: transparent;
+    
+
+}
+.nav .icon-phone{
+    font-size: 30px;
+    float: right;
+}
+.ghar{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+}
+.phone{
+    padding-left: 60rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #B0296C;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .upload_p{
+      background: url('/images/upload_p.png') no-repeat center center/cover;
+  }
+  .upload_p h1{
+      padding-top: 30vh;
+      padding-bottom: 20vh;
+      text-align: center;
+      color: white;
+  }
+  .terms h1{
+      background:  linear-gradient(to right ,rgb(161, 21, 119), rgb(201, 74, 93));
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    text-align: center;
+    color: white;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.page-footer{
+    background: linear-gradient(to right ,rgb(161, 21, 119), rgb(201, 74, 93));
+    color:white;
+}
+.footer-copyright {
+    background: rgb(153 34 107);
+}
+.up{
+    margin:3.5rem 0;
+}
+.heading{
+    position: relative;
+    font-family: Serif	;
+    color: #591c58f2;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+.heading::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    margin-left: 1rem;
+    padding-top: 3px;
+    background-color: teal;
+    position: absolute;
+}
+.heading-half{
+    position: relative;
+    font-family: Serif	;
+    color: #591c58f2;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+.heading-half::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 5rem;
+  
+    padding-top: 3px;
+    background-color: teal;
+    position: absolute;
+}
+.category-item{
+  
+    display: inline-block;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.head{
+    font-size: 17px;
+    padding: 0 10px;
+}
+.category-item:hover{
+    background: #A51B74;
+    color: white;
+}
+.ser{
+    margin-top: 25px;
+    
+}
+.ser-img{
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.height {
+    height: 100vh
+}
+/* 
+.card {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding:10px 12px;
+}
+
+.main-heading {
+    font-size: 40px;
+    color: red !important;
+}
+.ratings{
+    display: flex;
+}
+.ratings i {
+    color: orange;
+    
+}
+
+.user-ratings h6 {
+    margin-top: 2px
+}
+.btn-danger {
+    height: 48px;
+    font-size: 18px
+}
+.range{
+    padding: 6px 16px;
+    background: white;
+    color: black;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+} */
+.category-items {
+    position: relative;
+    background: linear-gradient(#3633336b, #ccc);
+    
+    box-shadow: 1px 6px 4px  2px #3633336b;
+    border-radius: 12px;
+}
+.see{
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 2px 12px;
+    top: 10%;
+    background: #0c0c0c6b;
+    animation: example  infinite;
+    animation-duration: 2s;
+    display: block;
+}
+.sell{
+    position: absolute;
+    right: 0;
+    
+}
+.banner-img{
+    width: 100%;
+    height: 70vh;
+}
+.single-heading{
+color: brown;
+animation: color infinite forwards;
+animation-duration: 1s;
+}
+@keyframes color {
+    from {color: #A71D73;}
+    to {color: #C7475E;}
+  
+}
+@keyframes example {
+    from {padding: 0;}
+    to {
+        padding: 2px 12px;}
+  }
+  .order-btn{
+      padding: 12px 30px;
+      background: linear-gradient(45deg,#A21677, rgb(201, 74, 93));
+      color: white;
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+      border-radius: 15px;
+
+  }
+  .contact{
+      font-size: 30px;
+      background: white;
+      color: red;
+      padding: 9px 32px;
+      box-shadow: 4px 4px 4px #111111;
+      border-radius: 7px;
+  }
+  /* .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top: 4px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  } */
+  .border-r{
+      border-radius: 7px;
+  }
+  .marble{
+      display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+  }
+  .marble img{
+      width: 200px;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  .realstate-services{
+    position: relative;
+    overflow-x: hidden;
+
+ 
+  }
+  .realstate-services::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    background: url('/images/services/real-state/wave-bottom.svg');
+    height: 270px;
+    overflow-x: hidden;
+  }
+  .realstate-h{
+        padding: 10vh 5rem;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+
+  }
+
+  .f-rt{
+    
+      margin-right: 3rem;
+  }
+  .agents .col-sm-3{
+      padding-left: 0;
+      padding-right: 0;
+      }
+  .agent{
+      position: relative;
+      padding: 20px 10px;
+      margin-top: 5px;
+      font-family: emoji;
+  }
+  
+  .agent img{
+      width:100%;
+      height: 280px;
+  }
+  .agent img:hover{
+      transform: scale(1.1);
+  }
+  .agent-d{
+      content: "";
+      bottom: 0;
+      position: absolute;
+        left: 10%;
+       font-size: smaller;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: -1rem;
+
+  }
+  .agent-d h1{
+        font-size: 20px;
+        color: rgb(49 43 43 / 81%);
+  }
+  .house{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 9px;
+      box-shadow: 2px 2px 2px #111;
+
+  }
+  .house:hover{
+      z-index: 9;
+  }
+  .room{
+      content: "";
+      position: absolute;
+      left: 30%;
+      bottom:0;
+      margin-bottom: -4rem;
+      height: 300px;
+      width: 300px;
+      border-radius: 9px;
+      box-shadow: 2px 2px 2px #111;
+  }
+  .heading-rent{
+      color: #A51B74;
+      font-family:serif;
+  }
+  .shadow{
+    box-shadow: 0 2px 2px 2px #1111;
+  }
+  .bg-web{
+    background: linear-gradient(45deg,#A21677, rgb(201, 74, 93));
+  }
+  
+
+  .card_count{
+      position: absolute;
+     color: red;
+     font-weight: bolder;
+        padding: 2px;
+        right: 0;
+        top: 0;
+        border-radius: 25%;
+  }
+  /* realstare house */
+  .property-area {
+      background-attachment: fixed;
+    background:linear-gradient(#0000006b, #0000006b), url('/images/realstate-banner.jpg') no-repeat center center/cover;
+}
+.property-area .overlay-bg {
+    opacity: 0.8;
+}
+  .single-property {
+    background-color: #fff;
+    padding: 20px;
+    transition: all 0.3s ease 0s;
+    }
+    .images {
+    background: #222;
+    overflow: hidden;
+    }
+    .images img:hover{
+        transform: scale(1.1);
+    }
+    .images span {
+    color: #fff;
+    padding: 5px 25px;
+    margin-top: -50px;
+    position: absolute;
+    margin-left: 8px;
+    background: linear-gradient(0deg, #f40f68 0%, #AD246F 100%);
+   
+    }
+    .desc .top {
+    padding: 25px 0;
+    }
+    .desc .middle {
+    padding-bottom: 5px;
+    }
+    .desc .bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    }
+    .desc .middle p {
+    width: 33%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    }
+    .desc .middle .gr {
+    color: #1fe111;
+    }
+    .desc .middle .rd {
+    color: #f40f68;
+    }
+    .desc .bottom {
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+    }
+    .desc .bottom p {
+        width: 50%;
+        margin-bottom: 0px;
+    font-size: 16px;
+
+    }
+    /* product css */
+    .product-card {
+       
+        position: relative;
+        box-shadow: 0 2px 7px #dfdfdf;
+      
+        background: #fafafa;
+    }
+ 
+    .badge {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        background: red;
+        color: #fff;
+        padding: 3px 10px;
+    }
+ 
+    .product-tumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 240px;
+        padding: 18px;
+        background: #f0f0f0;
+    }
+ 
+    .product-tumb img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+ 
+    .product-details {
+        padding: 15px;
+    }
+ 
+    .product-catagory {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ccc;
+        margin-bottom: 5px;
+    }
+ 
+    .product-details h4 a {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: #363636;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+ 
+    .product-details h4 a:hover {
+        color: #fbb72c;
+    }
+ 
+    .product-details p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 18px;
+        color: #999;
+    }
+ 
+    .product-bottom-details {
+        overflow: hidden;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+    }
+ 
+    .product-bottom-details div {
+        float: left;
+       
+    }
+ 
+    .product-price {
+        font-size: 18px;
+        color: #fbb72c;
+        font-weight: 600;
+        width: 60%;
+    }
+ 
+    .product-price small {
+        font-size: 80%;
+        font-weight: 400;
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 5px;
+    }
+ 
+    .product-links {
+        text-align: right;
+        width:40%;
+    }
+ 
+    .product-links a {
+        display: inline-block;
+        margin-left: 5px;
+        color: #e1e1e1;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+ 
+    .product-links a:hover {
+        color: #fbb72c;
+    }
+    .single{
+        padding: 0 10vh;
+        background:linear-gradient(156deg,#252d4a,#aa278c 51%,#ffc08c);
+    }
+    .single-product{
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px 4px #0000006b;
+        margin: 12vh;
+    }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #ccc;
+    }
+    .main-heading {
+        font-size: small;
+    }
+    .phone{
+        padding-left: 2rem;
+        width:fit-content;
+    }
+    .marble{
+        display: block;
+  
+    }
+    .marble img{
+        width: 100%s;
+    }
+    .realstate-services img{
+        width: 100%;
+        height: 100%;
+    }
+    .d-flexs{
+        display: flex;
+    }
+    .realstate-h{
+        padding: 8vh 0 39vh 0;
+         }
+         .realstate-h h1{
+             font-size: 2rem;
+         }
+         .realstate-h p{
+            display: none;
+        }
+        .f-rt{
+            float: none;
+        }
+        .realstate-services::after {
+        height: 282px;
+        }
+        .a-link{
+            display: nones;
+        }
+        .house{
+            width: 55%;
+            height: 80%;
+        }
+        .room{
+            width: 55%;
+            height: 80%;
+            margin-bottom: -1rem;
+
+        }
+        .single{
+            padding: 0 ;
+        }
+        .single-product{
+            margin:0;
+            margin-top: 5rem;
+        }
+        
+  }
+  .a-link{
+      position: fixed;
+      width: 100%;
+      margin-top: 4rem;
+      background: white;
+      color: black;
+      padding: 0px 20px;
+      display: none;
+      z-index: 1;
+      box-shadow: 0 2px 2px 2px #1111;
+
+  }
